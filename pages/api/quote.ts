@@ -1,7 +1,7 @@
 import prisma from '../../lib/prisma'
 
 export const config = {
-  runtime: 'edge',
+  runtime: 'experimental-edge',
 };
 
 export default async function () {

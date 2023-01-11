@@ -6,7 +6,7 @@ import type { Quote } from "@prisma/client";
 import prisma from '../lib/prisma'
 
 export const config = {
-  runtime: 'edge',
+  runtime: 'experimental-edge',
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
