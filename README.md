@@ -71,7 +71,7 @@ The app is now running, navigate to http://localhost:3000/ in your browser to ex
 
 The Deploy button will take you through Vercel's project creation flow. Vercel will help to clone this job to your own GitHub repository and automatically deploy it.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshiyuhang0%2Fprisma-edge-functions&env=DATABASE_URL,MIGRATE_DATABASE_URL,PRISMA_GENERATE_DATAPROXY&envDescription=TiDB%20Cloud%20and%20prisma%20data%20proxy%20connect%20string%20)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshiyuhang0%2Fprisma-edge-functions&env=DATABASE_URL,MIGRATE_DATABASE_URL&envDescription=TiDB%20Cloud%20and%20prisma%20data%20proxy%20connect%20string%20)
 
 1. Click the **Deploy** button.
 2. Click **GitHub** button and authenticate GitHub account.
@@ -79,9 +79,8 @@ The Deploy button will take you through Vercel's project creation flow. Vercel w
 4. Click **Create** to create the git repository.
 5. [Set up Prisma Data Proxy](#How to set up Prisma Data Proxy) with the GitHub repository you create in step 4.
 6. Enter the environment variables:
-   - `MIGRATE_DATABASE_URL`: the tidb cloud connection string
-   - `DATABASE_URL`: the Prisma Data Proxy connection string
-   -  `PRISMA_GENERATE_DATAPROXY`: set to true to ensure that Prisma Client for Data Proxy is generated in the build step.
+   - `MIGRATE_DATABASE_URL`: the tidb cloud connection string.
+   - `DATABASE_URL`: the Prisma Data Proxy connection string.
 7. Click **Deploy**.
 
 🎉 Mission Completes.
