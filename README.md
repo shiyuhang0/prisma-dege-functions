@@ -35,7 +35,7 @@ The Prisma Data Proxy is a proxy server for your database that allows you to int
 
    ![proxy.png](img/proxy.png)
 
-7. Click **Schema Viewer** in Data Platform, you need to fill in the repository and click **Link Prisma schema** after you fork a repository.
+7. Click **Schema Viewer** in Data Platform, you can fill in the repository and click **Link Prisma schema** after you fork a repository. It is optional, if you don't link to your repository, prisma data proxy will sync the schema automatically by introspection mechanism.
 
    ![schema.png](img/schema.png)
 
@@ -50,7 +50,7 @@ The Prisma Data Proxy is a proxy server for your database that allows you to int
     cd prisma-edge-functions
     ```
 
-2. Link Prisma schema to the new repository you create. Follow [Set up Prisma Data Proxy](#how-to-set-up-prisma-data-proxy) step 7.
+2. Optional: Link Prisma schema to the new repository you create. Follow [Set up Prisma Data Proxy](#how-to-set-up-prisma-data-proxy) step 7.
    
 3. Set DATABASE_URL environment variables.
 
@@ -100,7 +100,7 @@ The Deploy button will take you through Vercel's project creation flow. Vercel w
 2. Click **GitHub** button and authenticate GitHub account.
 3. Select your **Git Scope** and fill in **Repository Name** for your own GitHub repository.
 4. Click **Create** to create the git repository.
-5. Link Prisma schema to the new repository you create. Follow [Set up Prisma Data Proxy](#how-to-set-up-prisma-data-proxy) step 7.
+5. Optional: Link Prisma schema to the new repository you create. Follow [Set up Prisma Data Proxy](#how-to-set-up-prisma-data-proxy) step 7.
 6. Enter the environment variables:
    - `MIGRATE_DATABASE_URL`: the tidb cloud connection string.
    - `DATABASE_URL`: the Prisma Data Proxy connection string.
@@ -128,7 +128,7 @@ The **Deploy to Netlify** button will take you to Netlify's deployment page. The
    - `MIGRATE_DATABASE_URL`: the tidb cloud connection string.
    - `DATABASE_URL`: the Prisma Data Proxy connection string.
 5. Click **Save & Deploy**.
-6. Link Prisma schema to the new repository you create. Follow [Set up Prisma Data Proxy](#how-to-set-up-prisma-data-proxy) step 7.
+6. [Optional]: Link Prisma schema to the new repository you create. Follow [Set up Prisma Data Proxy](#how-to-set-up-prisma-data-proxy) step 7.
 
 ![img/netlify.png](img/netlify.png)
 
