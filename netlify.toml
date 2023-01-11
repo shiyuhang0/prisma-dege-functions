@@ -1,0 +1,3 @@
+[template.environment]
+MIGRATE_DATABASE_URL = "TiDB Cloud connection string"
+DATABASE_URL = "Prisma Data Proxy connection string"
