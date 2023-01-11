@@ -10,8 +10,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "vercel-build": "npm run prisma:migrate && next build",
-    "prisma:migrate": "DATABASE_URL=\"$MIGRATE_DATABASE_URL\" prisma migrate deploy"
+    "vercel-build": "npm run prisma:migrate && npm run prisma:seed && npm run build",
+    "prisma:migrate": "DATABASE_URL=\"$MIGRATE_DATABASE_URL\" prisma migrate deploy",
+    "prisma:seed": "DATABASE_URL=\"$MIGRATE_DATABASE_URL\"  prisma db seed"
   },
   "dependencies": {
     "@prisma/client": "4.6.1",

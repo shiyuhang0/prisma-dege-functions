@@ -1,5 +1,5 @@
 module.exports = {
   experimental: {
-    runtime: 'experimental-edge',
+    runtime: 'edge',
   },
 };
