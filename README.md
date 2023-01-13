@@ -11,7 +11,7 @@ This sample application shows how you can work with TiDB Cloud and edge function
 
 1. Go to [TiDB Cloud](https://tidbcloud.com/) and create a serverless tier cluster.
 2. Navigate to your serverless tier cluster's dashboard.
-3. Click **Connect** to set a password, you can also build the connect string with this pattern `mysql://USER:PASSWORD@HOST:PORT/edge_function?sslaccept=strict`.
+3. Click **Connect** to set a password, you can also build the prisma connect string with this pattern `mysql://USER:PASSWORD@HOST:PORT/edge_function?sslaccept=strict`.
 
 ![tidbcloud-connect.png](img/connect.png)
 
@@ -31,7 +31,7 @@ The Prisma Data Proxy is a proxy server for your database that allows you to int
    ![prisma_project.png](img/prisma_project.png)
 
 5. Click **Skip and continue to Data Platform** to go to the Data Platform.
-6. Click **Data Proxy** in Data Platform, then click **Create a new connection string** to create a new connection string that starts with `prisma://.` Copy and save it for later use.
+6. Click **Data Proxy** in Data Platform, then click **Create a new connection string** to create a new connection string that starts with `prisma://`. Copy and save it for later use.
 
    ![proxy.png](img/proxy.png)
 
