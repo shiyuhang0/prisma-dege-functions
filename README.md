@@ -4,7 +4,7 @@
 
 Edge functions are serverless functions at The Edge. They are written in JavaScript or TypeScript and run on a global network. It allows running server-side code geographically close to end users and enjoy lower latency.
 
-This sample application shows how you can work with TiDB Cloud and edge functions.
+This sample application shows how you can work with TiDB Cloud and edge functions. And here is a [live demo](https://vercel-edge-functions-prod.vercel.app/) build on vercel.
 
 
 ## Set up TiDB Cloud
